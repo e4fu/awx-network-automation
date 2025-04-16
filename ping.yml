@@ -1,7 +1,6 @@
----
-- name: Test connectivity
+- name: Ping localhost
   hosts: all
   gather_facts: no
   tasks:
-    - name: Ping device
-      ping:
+    - name: Ping test
+      ansible.builtin.ping:
